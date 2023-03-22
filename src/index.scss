@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: 'Roboto Mono';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: #282a3a;
+  width: 100%;
+  height: 1080px;
+  text-align: center;
+
+  span {
+    position: relative;
+    color: #f5f5f5;
+    font-size: 128px;
+    font-weight: bold;
+    top: 80px;
+  }
+  .content {
+    background-color: #474e68;
+    border-radius: 60px;
+    width: 93%;
+    margin: 0 auto;
+    margin-top: 80px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    span {
+      font-size: 40px;
+      font-weight: 400;
+      top: 37px;
+    }
+    input {
+      background-color: #282a3a;
+      border-radius: 15px;
+      position: relative;
+      top: 52px;
+      width: 55%;
+      height: 66px;
+      margin: 0 auto;
+      padding-left: 50px;
+      padding-top: 10px;
+      font-size: 30px;
+      font-family: 'Roboto Mono';
+      color: #f5f5f5;
+
+      &::placeholder {
+        font-size: 30px;
+      }
+    }
+  }
+  .add-task {
+    position: relative;
+    top: 80px;
+    width: 30%;
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    background-color: #50577a;
+    color: #f5f5f5;
+    &:active {
+      transform: translateY(-2px);
+      transition: 0.25s;
+    }
+  }
+}
+.your-tasks {
+  margin-top: 52px;
+}
+.tasks {
+  margin-top: 20px;
+  overflow-y: auto;
+
+  .task-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+
+    .task {
+      padding-left: 20px;
+      width: 35%;
+      height: 60px;
+      background-color: #282a3a;
+      border-radius: 10px;
+      display: flex;
+      span {
+        top: 0;
+      }
+    }
+    .completed {
+      background-color: #55597a;
+      text-decoration: line-through;
+    }
+
+    .completed-btn {
+      margin-left: 19px;
+
+      width: 60px;
+      height: 60px;
+      background-color: #50577a;
+      color: #f5f5f5;
+      border: none;
+      border-radius: 10px;
+      &:active {
+        transform: translateY(-2px);
+      }
+    }
+    .delete-btn {
+      margin-left: 19px;
+
+      width: 60px;
+      height: 60px;
+      background-color: #50577a;
+      color: #f5f5f5;
+      border: none;
+      border-radius: 10px;
+      &:active {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
